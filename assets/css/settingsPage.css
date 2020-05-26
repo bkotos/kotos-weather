@@ -1,0 +1,10 @@
+#frm-kotos-weather > .submit {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#frm-kotos-weather .txt-setting,
+#frm-kotos-weather .sel-setting {
+    width: 300px;
+}

@@ -1,0 +1,131 @@
+.kotos-weather-widget-container {
+    color: white;
+    padding: 0;
+    font-size: 18pt;
+    /*font-weight: bold;*/
+    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+    /*text-shadow: 2px 4px 0px rgba(0,0,0,0.3);*/
+    position: relative;
+}
+
+.kotos-weather-widget-container .text-center {
+    text-align: center;
+}
+
+.kotos-weather-widget-container > .pane {
+    padding: 20px;
+}
+
+.kotos-weather-widget-container > .pane-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.kotos-weather-widget-container > .pane:not(.pane-active) {
+    display: none;
+}
+
+.kotos-weather-widget-container .button-container {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px 0 0;
+}
+
+.kotos-weather-widget-container .pane-header {
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    font-size: 16pt;
+}
+
+.kotos-weather-widget-container .frm-field {
+    padding: 0;
+    border: 0;
+    margin: 0 0 10px 0;
+}
+
+.kotos-weather-widget-container .frm-label {
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+
+.kotos-weather-widget-container .frm-input {
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    float: right;
+}
+
+.kotos-weather-widget-container .bg-sky {
+    /*background: #87CEFA;*/
+    /*background: linear-gradient(to bottom, #87CEFA 0%, #78BFEB 100%);*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #87CEFA), color-stop(100%, #78BFEB));*/
+    /*background: -webkit-linear-gradient(top, #87CEFA 0%, #78BFEB 100%);*/
+    /*background: -moz-linear-gradient(top, #87CEFA 0%, #78BFEB 100%);*/
+    /*background: -o-linear-gradient(top, #87CEFA 0%, #78BFEB 100%);*/
+    /*background: -ms-linear-gradient(top, #87CEFA 0%, #78BFEB 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87CEFA', endColorstr='#78BFEB', GradientType=0);*/
+    /*border: 1px solid #69B0DC;*/
+    /*box-shadow: inset 0 1px 0 #96DDFF;*/
+    /*-webkit-box-shadow: inset 0 1px 0 #96DDFF;*/
+    /*-moz-box-shadow: inset 0 1px 0 #96DDFF;*/
+    background-color: #03b0f1;
+}
+
+.kotos-weather-widget-container .btn-widget {
+    padding: 10px;
+    margin: 0;
+    background: #3981ad;
+    transition: .2s;
+}
+
+.kotos-weather-widget-container .btn-widget:hover {
+    text-decoration: none;
+    background-color: #145c88;
+}
+
+/*.kotos-weather-widget-container table {*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+.kotos-weather-widget-container table,
+.kotos-weather-widget-container th,
+.kotos-weather-widget-container td {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.kotos-weather-widget-container .cell-heading {
+    /*text-align: right;*/
+}
+
+.kotos-weather-widget-container .cell-value {
+    /*text-align: left;*/
+}
+
+.kotos-weather-widget-container .txt-small {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.kotos-weather-widget-container .border-bottom {
+    border-bottom: 1px solid #ffffff73;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.kotos-weather-widget-container .lbl-date {
+    border-right: 1px solid #ffffff73;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
