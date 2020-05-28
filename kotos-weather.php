@@ -27,12 +27,8 @@ if (!function_exists('add_action')) {
     exit;
 }
 
-//require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 require_once '/usr/local/lib/vendor/autoload.php';
-// TODO deploy:
-// composer install
-// COMPOSER_VENDOR_DIR=/usr/local/lib/vendor composer install
-// TODO extract
 
 use KotosWeather\Plugin;
 use Pimple\Container;
