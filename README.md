@@ -20,3 +20,5 @@ This code base makes use of several design patterns and technical best practices
  I like to follow as it allows for more extensible, maintainable, and testable code.
  - All classes use **dependency injection** and are wired using an **inversion of control** container 
  named `ServiceProvider`.
+
+docker run php:7.2 

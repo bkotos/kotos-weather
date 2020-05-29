@@ -4,6 +4,7 @@ namespace KotosWeather\Repository\Wordpress;
 
 use KotosWeather\Adapter\WordpressAdapterInterface;
 use KotosWeather\Entity\Wordpress\Setting;
+use KotosWeather\Plugin;
 
 class SettingRepository
 {
@@ -43,6 +44,7 @@ class SettingRepository
     {
         $openWeatherMapApiHostnameSetting = new Setting();
         $openWeatherMapApiHostnameSetting
+            ->setOptionGroup(Plugin::KOTOS_WEATHER_OPTION_GROUP)
             ->setOptionName('open_weather_map_asset_host')
             ->setLabel('OpenWeatherMap Asset Host')
             ->setDefaultValue(self::DEFAULT_ASSET_HOST);
@@ -56,6 +58,7 @@ class SettingRepository
     {
         $openWeatherMapApiHostnameSetting = new Setting();
         $openWeatherMapApiHostnameSetting
+            ->setOptionGroup(Plugin::KOTOS_WEATHER_OPTION_GROUP)
             ->setOptionName('open_weather_map_api_host')
             ->setLabel('OpenWeatherMap API Host')
             ->setDefaultValue(self::DEFAULT_API_HOST);
@@ -69,6 +72,7 @@ class SettingRepository
     {
         $openWeatherMapApiKeySetting = new Setting();
         $openWeatherMapApiKeySetting
+            ->setOptionGroup(Plugin::KOTOS_WEATHER_OPTION_GROUP)
             ->setOptionName('open_weather_map_api_key')
             ->setLabel('OpenWeatherMap API Key')
             ->setDefaultValue(self::DEFAULT_API_KEY);

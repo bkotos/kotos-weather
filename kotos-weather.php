@@ -28,7 +28,6 @@ if (!function_exists('add_action')) {
 }
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once '/usr/local/lib/vendor/autoload.php';
 
 use KotosWeather\Plugin;
 use Pimple\Container;

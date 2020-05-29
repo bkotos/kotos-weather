@@ -104,6 +104,10 @@ class PluginSettingsPageTemplate implements TemplateInterface
             <p>
                 Alternatively, you can use the default values provided with this plugin.
             </p>
+            <p>
+                The widget for this plugin can be added to your site by visiting the
+                <a href="widgets.php">Widgets</a> page.
+            </p>
             <p class="submit">
                 <input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes" />
                 <button id="btn-reset" class="button">Restore Defaults</button>

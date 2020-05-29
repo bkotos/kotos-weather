@@ -5,6 +5,9 @@ namespace KotosWeather\Entity\Wordpress;
 class Setting
 {
     /** @var string */
+    private $optionGroup;
+
+    /** @var string */
     private $optionName;
 
     /** @var string */
