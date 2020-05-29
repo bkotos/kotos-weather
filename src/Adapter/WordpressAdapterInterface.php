@@ -25,6 +25,11 @@ interface WordpressAdapterInterface
     /**
      * @param callable $function
      */
+    public function addAdminInitHook(callable $function);
+
+    /**
+     * @param callable $function
+     */
     public function addAdminEnqueueScriptsAction(callable $function);
 
     /**

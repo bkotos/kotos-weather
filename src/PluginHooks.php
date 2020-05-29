@@ -73,6 +73,11 @@ class PluginHooks
         );
     }
 
+    public function onAdminInitHook()
+    {
+        $this->registerSettings();
+    }
+
     /**
      * @param string[] $links
      * @return string[]

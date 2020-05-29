@@ -56,6 +56,14 @@ class WordpressAdapter implements WordpressAdapterInterface
     /**
      * @param callable $function
      */
+    public function addAdminInitHook(callable $function)
+    {
+        \add_action('admin_init', $function);
+    }
+
+    /**
+     * @param callable $function
+     */
     public function addAdminEnqueueScriptsAction(callable $function)
     {
         \add_action('admin_enqueue_scripts', $function);

@@ -51,6 +51,7 @@ class Plugin
 
         // plugin settings page
         $this->wordpressAdapter->addAdminMenuAction([$this->pluginHooks, 'onAdminMenuAction']);
+        $this->wordpressAdapter->addAdminInitHook([$this->pluginHooks, 'onAdminInitHook']);
         $this->wordpressAdapter->addPluginActionLinksFilter([$this->pluginHooks, 'onPluginActionLinksFilter']);
         $this->wordpressAdapter->addAdminEnqueueScriptsAction([$this->pluginHooks, 'onEnqueueAdminScriptsAction']);
 
