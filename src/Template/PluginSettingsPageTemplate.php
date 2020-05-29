@@ -58,7 +58,7 @@ class PluginSettingsPageTemplate implements TemplateInterface
                         if ($setting instanceof DropdownSetting) {
                         ?>
                         <select
-                            class="sel-setting"
+                            class="setting-input sel-setting"
                             name="<?php echo $this->wordpressAdapter->escapeAttribute($optionName); ?>"
                             id="<?php echo $this->wordpressAdapter->escapeAttribute($id); ?>"
                             data-default-value="<?php echo $this->wordpressAdapter->escapeAttribute($defaultValue); ?>"
@@ -82,7 +82,7 @@ class PluginSettingsPageTemplate implements TemplateInterface
                         ?>
                         <input
                             type="text"
-                            class="sel-setting"
+                            class="setting-input sel-setting"
                             name="<?php echo $this->wordpressAdapter->escapeAttribute($optionName); ?>"
                             id="<?php echo $this->wordpressAdapter->escapeAttribute($id); ?>"
                             value="<?php echo $this->wordpressAdapter->escapeAttribute($value); ?>"

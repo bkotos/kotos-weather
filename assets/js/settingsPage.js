@@ -6,7 +6,7 @@ function SettingsPage() {}
 SettingsPage.SELECTORS = {
     BTN_RESET: '#btn-reset',
     FRM_KOTOS_WEATHER: '#frm-kotos-weather',
-    TXT_SETTING: '.txt-setting'
+    TXT_SETTING: '.setting-input'
 };
 
 SettingsPage.prototype = {
