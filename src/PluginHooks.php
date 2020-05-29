@@ -80,6 +80,7 @@ class PluginHooks
     public function onPluginActionLinksFilter(array $links): array
     {
         $links[] = "<a href=\"admin.php?page={$this->pluginSettingsPage->getMenuSlug()}\">Settings</a>";
+        $links[] = "<a href=\"widgets.php\">Widgets</a>";
 
         return $links;
     }
