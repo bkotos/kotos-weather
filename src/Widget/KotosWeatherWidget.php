@@ -34,9 +34,9 @@ class KotosWeatherWidget extends \WP_Widget
     public function widget($args, $instance)
     {
         $this->wordpressAdapter->enqueueStyle('dashicons');
-        $this->wordpressAdapter->enqueueStyle('weather-widget-css', '/assets/css/weatherWidget.css');
+        $this->wordpressAdapter->enqueueStyle('weather-widget-css', 'assets/css/weatherWidget.css');
         $this->wordpressAdapter->enqueueScript('jquery');
-        $this->wordpressAdapter->enqueueScript('weather-widget-js', '/assets/js/weatherWidget.js');
+        $this->wordpressAdapter->enqueueScript('weather-widget-js', 'assets/js/weatherWidget.js');
 
         $adminUrl = \admin_url('admin-ajax.php');
         $widgetInstanceId = rand(1, 100);
