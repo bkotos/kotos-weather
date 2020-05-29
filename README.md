@@ -21,4 +21,7 @@ This code base makes use of several design patterns and technical best practices
  - All classes use **dependency injection** and are wired using an **inversion of control** container 
  named `ServiceProvider`.
 
-docker run php:7.2 
+## Dev Tooling
+On Mac OS X or Linux, the following GNU Make commands are available:
+- `make composer-install` - Installs composer dependencies for this project.
+- `make package` - Creates a new distributable zip file for this plugin.
