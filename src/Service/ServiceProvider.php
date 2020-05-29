@@ -43,7 +43,7 @@ class ServiceProvider implements ServiceProviderInterface
         };
 
         $container[WordpressAdapterInterface::class] = function (Container $container) {
-            $pluginFilename = realpath(__DIR__ . '/../kotos-weather.php');
+            $pluginFilename = realpath(__DIR__ . '/../../kotos-weather.php');
             $pluginDirectory = \plugin_dir_path($pluginFilename);
             $pluginBasename = \plugin_basename($pluginFilename);
 
